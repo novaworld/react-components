@@ -1,0 +1,37 @@
+{
+  "name": "@ttungbmt/react-components",
+  "version": "0.0.1",
+  "description": "React Components",
+  "repository": "https://github.com/novaworld/js-react-components",
+  "main": "dist/react-hooks.cjs.js",
+  "module": "dist/react-hooks.es.js",
+  "unpkg": "dist/react-hooks.umd.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "Truong Thanh Tung <ttungbmt@gmail.com> (https://github.com/ttungbmt)",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "dev": "rollup -c -w",
+    "build": "yarn clean && rollup -c --environment NODE_ENV:production",
+    "push": "nodemon -x yalc push"
+  },
+  "dependencies": {
+    "@tippy.js/react": "^2.2.2",
+    "react": "^16.8.6",
+    "react-useportal": "^0.1.46"
+  },
+  "devDependencies": {
+    "@ttungbmt/module-config": "^0.0.17"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false
+}
